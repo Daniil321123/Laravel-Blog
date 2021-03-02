@@ -23,7 +23,7 @@ class CommentFactory extends Factory
     public function definition()
     {
             return [
-                'post_id' => rand(1, 50),
+                'post_id' => rand(1, 10),
                 'user_id' => rand(1, 10),
                 'content' => $this->faker->realText(rand(200, 500)),
                 'created_at' => $this->faker->dateTimeBetween('-200 days', '-50 days'),
